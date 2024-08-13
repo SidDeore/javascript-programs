@@ -27,7 +27,7 @@ for (const element of arrayNum3) {
         oddNumber.push(element)
     }
 }
-console.log(`All Even no of Array: ${oddNumber}`);
+console.log(`All Odd no of Array: ${oddNumber}`);
 console.log(`======== Numbers which are multiple of 5 =========`);
 const arrayNum4 = [ 20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11 ];
 let multiple=[]
@@ -42,7 +42,7 @@ const arrayNum5 = [ 20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11 ];
 console.log(`is number 115 is available in Array: ${arrayNum5.includes(115)}`);
 console.log(`======== is number 23 available in Array =========`);
 const arrayNum6 = [ 20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11 ];
-console.log(`is number 115 is available in Array: ${arrayNum6.includes(23)}`);
+console.log(`is number 23 is available in Array: ${arrayNum6.includes(23)}`);
 console.log(`======== Insert numbers: 55, 66 at index 3 in Array =========`);
 const arrayNum7 = [ 20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11 ];
 console.log(`Given Array: ${arrayNum7}`);
