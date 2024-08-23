@@ -1,4 +1,4 @@
-console.log("======== count spaces in giiven string =========");
+console.log("======== count spaces in given string =========");
 function spaceCount(str, latter){
     let count = 0;
     for (let index = 0; index < str.length; index++) {
