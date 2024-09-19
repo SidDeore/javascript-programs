@@ -107,7 +107,7 @@ function removeArrayObjectDuplicate(arr) {
 var result = removeArrayObjectDuplicate(student);
 console.table(result);
 
-console.log("========= pro 10. How to get a subset of a javascript object’s properties? ===========");
+console.log("========= pro 10. How to get a subset of a javascript object's properties ===========");
 var person = {
     firstName : 'Sid',
     lastName : 'Deore',
@@ -117,3 +117,41 @@ var person = {
 }
 var {firstName, lastName} = person;
 console.log(firstName, lastName);
+
+console.log("========= pro 11. How to convert an Object {} to an Array [] of key-value pairs in JavaScript ===========");
+console.log('======== Method 01- Using Object.entries() ===========');
+const obj = {
+    key1 : 'value1',
+    key2 : 'value2',
+    key3 : 'value3'
+}
+const entries1 = Object.entries(obj);
+console.table(entries1);
+
+console.log('======== Method 02- Using Object.keys() ===========');
+const obj1 = {
+    key1 : 'value1',
+    key2 : 'value2',
+    key3 : 'value3'
+}
+const entries2 = Object.keys(obj).map(key => [key, obj[key]]);
+console.log(entries2);
+
+console.log("========= pro 12. How to check if a value is object-like in JavaScript ===========");
+function isObjectLike(value) {
+    console.log(`Given input: ${value}`);
+    return typeof value == 'object' && value != null;
+}
+console.log(isObjectLike({}));
+console.log(isObjectLike([]));
+console.log(isObjectLike(null));
+console.log(isObjectLike(42));
+console.log(isObjectLike('string'));
+
+console.log("========= pro 13. How to use a variable for a key in a JavaScript object literal ===========");
+let key = 'name';
+let value = 'John Doe';
+let obj3 = {
+    [key] : value
+}
+console.log(obj3);
